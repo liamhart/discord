@@ -104,7 +104,7 @@ async def dt(ctx, card_name):
     
 
     
-bot.run("MzA1OTI0MTA3MjY5MTc3MzQ1.DVFo2w.qKxWBjcBvehyUeykkOPPmrCDD4s")
+bot.run("<API_KEY>")
 
 
 
