@@ -1,17 +1,4 @@
-# ADA @author LiamHD
-
-# Imports the Google Cloud client library
-from google.cloud import translate
-
-# Instantiates a client
-translate_client = translate.Client()
-
-def translate_text_english(text):
-    # Translate text into english
-    target = 'en'
-    translation = translate_client.translate(str(text), target_language=target)
-
-    return translation['translatedText']
+# cardreader @author Liam Hart
 
 # HTTP Requests Stuff
 import requests
