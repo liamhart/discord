@@ -14,7 +14,7 @@ def find_card_info(name):
     global url
     cardURL = url + name
     r = requests.get(cardURL, headers={
-    "X-Mashape-Key": "mHRSukmbLSmshK7YlyJGm8Gnbt3np1sFAdrjsnKJ0vk8izlrqz",
+    "X-Mashape-Key": <KEY>,
     "Accept": "application/json"
     })
     try:
