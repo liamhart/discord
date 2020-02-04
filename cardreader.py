@@ -57,17 +57,6 @@ async def profile(ctx, user: discord.Member):
 async def kick(ctx, user: discord.Member):
     await bot.say(":boot: Bye, {}.".format(user.name))
     await bot.kick(user)
-    
-# Code for translate command
-@bot.command(pass_context=True)
-async def translate(ctx, message):
-    res = translate_text_english(message)
-    embed = discord.Embed(title="Translating...", color=0x4584b6)
-    lang = translate_client.detect_language(message)
-    embed.add_field(name="From:",value=lang['language'],inline=True)
-    embed.add_field(name="To:",value='en',inline=True)
-    embed.add_field(name="Result",value=res,inline=True)
-    await bot.say(embed=embed)
 
 # Code for Hearthstone command(s)
 @bot.command(pass_context=True)
